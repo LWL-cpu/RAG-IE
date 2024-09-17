@@ -1,0 +1,35 @@
+[SETTINGS]
+#dataset might be tacred, tacrev, re-tacred, and semeval
+dataset=rams
+#prompt_type might be simple or rag
+prompt_type=rag
+#model_name might be google/flan-t5-xl, google/flan-t5-xxl, meta-llama/Llama-2-70b-hf or mistralai/Mistral-7B-Instruct-v0.2
+model_name=/sds_wangby/models/Meta-Llama-3-8B-Instruct
+[OUTPUT]
+# change the following paths for llm and dataset
+simple_prompt_path=./data/tacred/prompts/T5_XL_simple_test_prompts.json
+rag_test_prompts_path=./data/tacred/prompts/T5_XL_rag_test_prompts.json
+simple_prompt_responses_path=./data/tacred/responses/T5_XL_simple_test_responses.json
+rag_test_responses_path=./data/tacred/responses/T5_XL_rag_test_responses.json
+[EMBEDDING]
+# change the following paths for dataset
+input_embedding_path =/223040263/wanlong/LLM_Retreival/RAG4RE/data/rams/test.jsonlines
+output_embedding_path = /223040263/wanlong/LLM_Retreival/RAG4RE/data/rams/test.npy
+
+[SIMILARITY]
+# change the following paths for dataset
+test_file=/223040263/wanlong/LLM_Retreival/RAG4RE/data/rams/test.jsonlines
+train_file=/223040263/wanlong/LLM_Retreival/RAG4RE/data/rams/train.jsonlines
+train_emb=/223040263/wanlong/LLM_Retreival/RAG4RE/data/rams/train.npy
+test_emb=/223040263/wanlong/LLM_Retreival/RAG4RE/data/rams/test.npy
+output_index=/223040263/wanlong/LLM_Retreival/RAG4RE/data/rams/test_rams_similarities.json
+[PATH]
+# change the following paths for dataset
+train_data_path=/223040263/wanlong/LLM_Retreival/RAG4RE/data/rams/train.jsonlines
+test_data_path=/223040263/wanlong/LLM_Retreival/RAG4RE/data/rams/test.jsonlines
+[RESULTS]
+# change the following paths for dataset
+rag_test_prompts_path=./data/tacred/results/rag_test_metric.json
+simple_prompt_path=./data/tacred/results/simple_test_metric.json
+rag_test_error_analysis_path=./data/tacred/error_analysis/rag_test_error_analysis.json
+simple_prompt_error_analysis_path=./data/tacred/error_analysis/simple_test_error_analysis.json
