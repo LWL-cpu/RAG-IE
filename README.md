@@ -68,15 +68,16 @@ python main.py \
 ```
 
 ```bash
-python main.py --test_data_path replace_with_your_path \
-                      --train_data_path replace_with_your_path \
-                      --similar_sentences_path replace_with_your_path \
-                      --dataset semeval \
-                      --prompt_type rag \
-                      --model_name LLaMA3-8b-instruct \
-                      --responses_path replace_with_your_path \
-                      --topk 10 \
-                      --task RE
+python main.py
+  --test_data_path replace_with_your_path \
+  --train_data_path replace_with_your_path \
+  --similar_sentences_path replace_with_your_path \
+  --dataset semeval \
+  --prompt_type rag \
+  --model_name LLaMA3-8b-instruct \
+  --responses_path replace_with_your_path \
+  --topk 10 \
+  --task RE
 ```
 #### b) Training
 
