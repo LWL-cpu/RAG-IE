@@ -95,14 +95,14 @@ accelerate launch \
   --model_path replace_with_your_path/models/Meta-Llama-3-8B-Instruct/ \
   --max_ckpts 3 \
   --max_seq_len 2048 \
-  --gradient_accumulation_steps 4 \
+  --gradient_accumulation_steps 16 \
   --output_dir ./ckpts \
   --log_dir ./train_logs \
-  --n_epochs 4 \
-  --train_bsz_per_gpu 8 \
-  --eval_bsz_per_gpu 8 \
+  --n_epochs 3 \
+  --train_bsz_per_gpu 2 \
+  --eval_bsz_per_gpu 2 \
   --learning_rate 2e-5 \
-  --eval_step 10 \
-  --save_step 10 \
+  --eval_step 100 \
+  --save_step 100 \
   --gradient_checkpointing
 ```
