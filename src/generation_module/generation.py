@@ -16,8 +16,8 @@ class GPT:
         self.key_ind = 0
         self.max_wrong_time = 5
         self.model_name = model_name
-        self.url = "https://gtapi.xiaoerchaoren.com:8930/v1"
-        self.keys = 'sk-HbhtKNDphdnSxW0NB83692AcD60b49E585A63bE1E28740Ab'
+        self.url = "your-url"
+        self.keys = 'your-keys'
         os.environ["OPENAI_API_KEY"] = self.keys
         os.environ["OPENAI_BASE_URL"] = self.url
 
