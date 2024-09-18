@@ -63,9 +63,21 @@ python main.py \
   --prompt_type rag \
   --model_name gpt3.5 \
   --responses_path replace_with_your_path/outputs/rams/gpt3.5_rams_rag_5_doc.json \
-  --topk 5
+  --topk 5 \
+  --task EE
 ```
 
+```bash
+python main.py --test_data_path replace_with_your_path \
+                      --train_data_path replace_with_your_path \
+                      --similar_sentences_path replace_with_your_path \
+                      --dataset semeval \
+                      --prompt_type rag \
+                      --model_name LLaMA3-8b-instruct \
+                      --responses_path replace_with_your_path \
+                      --topk 10 \
+                      --task RE
+```
 #### b) Training
 
 Similarly, replace specific paths with `replace_with_your_path`:
